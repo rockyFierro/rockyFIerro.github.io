@@ -10,7 +10,7 @@ import { Global } from '@emotion/react'
 
 
 export const GridItem = ({ children, href, title, thumbnail }) => {
-    <Box
+   return ( <Box
         w="100%"
         align="center"
     >
@@ -33,7 +33,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
                 {children}
             </Text>
         </LinkBox>
-    </Box>
+    </Box>)
 }
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => {
