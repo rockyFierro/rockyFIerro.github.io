@@ -2,14 +2,9 @@ import {
     Container,
     Badge,
     Link,
-    List,
-    ListItem
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 import {
     Title,
-    WorkImage,
-    Meta
 } from '../../components/layouts/work'
 import P from '../../components/layouts/paragraph'
 import Layout from '../../components/layouts/article'
@@ -29,16 +24,15 @@ const Work = () => {
                 </P>
                 <P>
                     Built on top of React, Redux and Express. The app was live for a short time before the original team
-                    decided to pull the back end and begin prototyping a new version that utilizes rasperry pi (zero) and a 'Plant Pot Moisture Sensor' to monitor moisture and notify the user via a frontend digital pet game.
+                    decided to pull the back end and begin prototyping a new version that utilizes rasperry pi (zero) and a Plant Pot Moisture Sensor to monitor moisture and notify the user via a frontend digital pet game.
                 </P>
                 <P>
                     Future updates will be ongoing in a {' '}
-                    <NextLink href="/posts">
+                    <NextLink href="/posts" passHref>
                         <Link>special dev blog.</Link>
                     </NextLink>
                 </P>
             </Container>
-
         </Layout>
     )
 }

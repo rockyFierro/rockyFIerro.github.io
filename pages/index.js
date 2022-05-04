@@ -54,7 +54,7 @@ const Page = () => {
                     </Heading>
                     <Paragraph>
                         Rocky is a full stack engineer with a passion for accessability, end to end problem solving, and tinkering in animation software. 2022 finds him spending a lot of time developing audio and visual styling to enhance how information can be optimized and delivered to a wider audience. He is currently working on an{' '}
-                        <NextLink href="/works/scribble-stadium">
+                        <NextLink href="/works/scribble-stadium" passHref>
                             <Link>educational application that promotes literacy.</Link>
                         </NextLink>
                     </Paragraph>
@@ -62,7 +62,7 @@ const Page = () => {
                         align="center"
                         my={4}
                     >
-                        <NextLink href='/works'>
+                        <NextLink href='/works' passHref>
                             <Button rightIcon={<ChevronRightIcon />}
                                 colorScheme="green"
                             > My Portfolio

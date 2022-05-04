@@ -13,8 +13,6 @@ import {
     MenuButton,
     IconButton,
     useColorModeValue,
-    Icon,
-    Th
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
@@ -23,7 +21,7 @@ const LinkItem = ({ href, path, children }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('#0f2a3f', '#5e6745')
     return (
-        <NextLink href={href}>
+        <NextLink href={href} passHref>
             <Link
                 p={2}
                 bg={active ? 'glassTeal' : undefined}

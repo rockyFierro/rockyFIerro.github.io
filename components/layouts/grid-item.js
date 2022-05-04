@@ -23,6 +23,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
             />
             <LinkOverlay
                 href={href}
+	   	passHref
                 target="_blank"
             >
                 <Text mt={2}>{title}</Text>
@@ -43,6 +44,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
         align="center"
     >
         <NextLink
+	    passHref
             href={`/works/${id}`}
         >
             <LinkBox cursor="pointer">
