@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
 import Navbar from './navbar'
-import NoSsr from '../layouts/no-ssr'
 
 const Main = ({ children, router }) => {
     return (
